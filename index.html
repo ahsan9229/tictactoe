@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
+    </div>
+    <main>
+      <h1>Tic Tac Toe Game</h1>
+      <div class="PDetail">
+        <span class="playerNameValue1"></span>
+        <span class="playerNameValue2"></span>
+      </div>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div class="score">
+          <p id="User-Score">0</p>
+          <p class="p1Name"></p>
+        </div>
+        <div class="score">
+          <p id="Comp-Score">0</p>
+          <p class="p2Name"></p>
+        </div>
+      </div>
+
+      <div class="rstBtn">
+        <button class="resetBtn">Reset Game</button>
+      </div>
+    </main>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">Welcome to TIC TAC TOE</div>
+        <div class="modal-body">
+          <div class="PlayerName">
+            First playaer name:<input
+              type="text"
+              placeholder="Enter the name"
+              class="FPN"
+              required
+            />
+          </div>
+          <div class="PlayerName">
+            Second player name:
+            <input
+              type="text"
+              placeholder="Enter the name"
+              class="SPN"
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btnStart">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
